@@ -11,6 +11,8 @@ import CC_06_While_hover from "./TheFramerBook/CC_06_While_hover";
 import CC_08_While_drag from "./TheFramerBook/CC_08_While_drag";
 import CC_09_Cycling_through_states from "./TheFramerBook/CC_09_Cycling_through_states";
 import CC_10_Animation_sequence from "./TheFramerBook/CC_10_Animation_sequence";
+import CC_11_Drag_Constraints from "./TheFramerBook/CC_11_Drag_Constraints";
+import CC_12_Drag_Direction_locking from "./TheFramerBook/CC_12_Drag_Direction_locking";
 function TheframerBook() {
   const [count, setCount] = useState(0);
   return (
@@ -50,6 +52,14 @@ function TheframerBook() {
       <>
         <Refresh onClick={() => setCount(count + 1)} />
         <CC_10_Animation_sequence />
+      </>
+      <>
+        <Refresh onClick={() => setCount(count + 1)} />
+        <CC_11_Drag_Constraints />
+      </>
+      <>
+        <Refresh onClick={() => setCount(count + 1)} />
+        <CC_12_Drag_Direction_locking />
       </>
     </VStack>
   );
