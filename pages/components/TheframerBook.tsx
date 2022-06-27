@@ -13,6 +13,9 @@ import CC_09_Cycling_through_states from "./TheFramerBook/CC_09_Cycling_through_
 import CC_10_Animation_sequence from "./TheFramerBook/CC_10_Animation_sequence";
 import CC_11_Drag_Constraints from "./TheFramerBook/CC_11_Drag_Constraints";
 import CC_12_Drag_Direction_locking from "./TheFramerBook/CC_12_Drag_Direction_locking";
+import CC_13_Drag_Transform from "./TheFramerBook/CC_13_Drag_Transform";
+import CC_14_Drag_3D_transform from "./TheFramerBook/CC_14_Drag_3D_transform";
+import CC_15_Scroll_Progress from "./TheFramerBook/CC_15_Scroll_Progress";
 function TheframerBook() {
   const [count, setCount] = useState(0);
   return (
@@ -60,6 +63,18 @@ function TheframerBook() {
       <>
         <Refresh onClick={() => setCount(count + 1)} />
         <CC_12_Drag_Direction_locking />
+      </>
+      <>
+        <Refresh onClick={() => setCount(count + 1)} />
+        <CC_13_Drag_Transform />
+      </>
+      <>
+        <Refresh onClick={() => setCount(count + 1)} />
+        <CC_14_Drag_3D_transform />
+      </>
+      <>
+        <Refresh onClick={() => setCount(count + 1)} />
+        <CC_15_Scroll_Progress />
       </>
     </VStack>
   );
